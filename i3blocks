@@ -1,0 +1,37 @@
+color=#dddddd
+
+[music]
+label=
+command=~/.bin/playing.sh
+signal=2
+interval=2
+
+[updates]
+label=
+command=checkupdates | wc -l
+interval=18000
+
+[weather]
+label=
+command=/home/james/.bin/weather.sh
+interval=600
+
+[volume]
+command=/home/james/.bin/volume
+interval=60
+signal=1
+
+[backlight]
+label=
+command=~/.bin/backlight.sh
+interval=once
+signal=3
+
+[battery]
+command=.bin/battery.sh
+interval=10
+
+[datetime]
+label=
+command=date '+%-k:%M'
+interval=30
